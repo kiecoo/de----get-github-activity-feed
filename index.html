@@ -8,12 +8,14 @@
   </head>
   <body>
     <script>
-	     var getGithubData = module.exports
-	    // var dc = require('dom-console', '5.1.0')()
+	    
+	    	    // var dc = require('dom-console', '5.1.0')()
     // dc.api.toggle()
     var bel = require('bel')
     var csjs = require('csjs-inject')
    
+	     var getGithubData = module.exports
+
     //var url = 'https://api.github.com/repos/wizardamigos/profiles/forks'
     getGithubData(callback)
     function callback (userprofiles) {
