@@ -2,34 +2,6 @@ var minixhr = require('minixhr')
 
 module.exports = getGithubData
 
-// var dc = require('dom-console', '5.1.0')()
-    // dc.api.toggle()
-    var bel = require('bel')
-    var csjs = require('csjs-inject')
-   
-    //var url = 'https://api.github.com/repos/wizardamigos/profiles/forks'
-    getGithubData(callback)
-    function callback (userprofiles) {
-      userprofiles.forEach(function (profile) {
-        document.body.appendChild(usercard(profile))
-      })
-    }
-    var css = csjs`
-       .main { color: red; }
-	      .json {
-	        background-color: pink;
-	        color: black;
-	      }
-	    `
-    
-    function usercard (profile) {
-      return bel`
-        <div class=${css.main}>
-          <h1> ${profile.username} </h1>
-          <pre class=${css.json}> ${ JSON.stringify(profile, null, 4) } </pre>
-        </div>
-      `
-    }
 
 /**************************************************************************
   MODULE DEFINITION
